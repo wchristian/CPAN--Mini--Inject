@@ -17,11 +17,11 @@ my $builder = MyBuilder->new(
   ],
   dist_version_from => 'lib/CPAN/Mini/Inject.pm',
   requires          => {
-    'Archive::Tar'              => 0,
     'CPAN::Checksums'           => 0,
     'CPAN::Mini'                => '0.32',
     'Carp'                      => 0,
     'Compress::Zlib'            => 0,
+    'Dist::Metadata'            => '0.911',
     'Env'                       => 0,
     'File::Basename'            => 0,
     'File::Copy'                => 0,
@@ -37,7 +37,6 @@ my $builder = MyBuilder->new(
     'YAML'                      => 0,
     'File::Slurp'               => 0,
     'File::Temp'                => 0,
-    'Module::Build::ModuleInfo' => 0,
   },
   add_to_cleanup =>
    [ 'CPAN-Mini-Inject-*', 't/local/WRITEREPO', 't/local/MYCPAN' ],
